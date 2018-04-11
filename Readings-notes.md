@@ -17,7 +17,8 @@ People learn a model (i.e. set of weights) that predicts value of applying a str
 - They do this for external and internal representations.
 - People predict cost and reward separately (since VOC can not be observed directly)
 
-### Experiments:
+### Experiments:
+
 #### Experiment 1:
 - Sorting selection algorithms problem on different lists  (only 2 strategies)
   - People can select based on features
@@ -26,7 +27,7 @@ People learn a model (i.e. set of weights) that predicts value of applying a str
   - People can do this on interlnal representations
   - People can select adaptively based on resource constraints	
 
-#### Experiment 2 : gambling tasks with different conditions
+#### Experiment 2 : gambling tasks with different conditions
   - 1) People learn to perform fewer computations when it’s not worth the effort. 
   - 2) People learn to think more when it’s critical (high stakes)
   - 3) People improve in selecting adaptively with experience
