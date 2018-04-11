@@ -1,6 +1,5 @@
-# Week 4 - Nicolas
 
-## Strategy Selection as Rational Metareasoning			
+## Strategy Selection as Rational Metareasoning			(Week 4 - Nicolas)
 Falk Lieder and Thomas L. Griffiths
 
 ### Big picture:				
