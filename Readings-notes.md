@@ -1,3 +1,22 @@
+## The successor representation in human reinforcement learning    (Week 3 - Pablo)
+Memmennejad, Russek, Cheong, Botvinick, Daw and Gershman
+
+### Big picture:				
+
+The paper discusses the classical distinction in reinforcement learning (RL) and psychology between __model-based__ (RL) or __deliberative__ and __model-free__ or habitual choice. Model-based approaches trade flexibility against computational costs, as they constantly have to recompute the utility of actions. In contrast __model-free__ approaches store pre-computed values and are efficient. However, this efficiency comes at the cost of a lack of flexibility to changes in the environment. 
+The authors show in between this fundamentally different approaches an intermediate algorithmic family exists that can balances flexibility and efficiency. 
+This family of algorithms reuses previously calculated paths given their past utility and thus can match __model-free__ efficiency. If no previous evaluation is applicable the model resembles a __model-based__ approach. The authors call this family of algorithms __successor representations__. 
+
+The paper contrasts the predictions for the three classes of models for changes in task sequences, task rewards and policy changes and compares them to human data. They show that humans exhibit sensitivity for reward changes but not for sequence changes. This asymmetry cannot be accounted for in terms of the classical __model free__ vs. __model based__ accounts, but in terms of __successor representation__ or successor-model based hybrids. 
+
+
+### Open questions/limits
+
+- The tasks used in the experiments are susceptible to standard criticisms of RL domains. It is unclear if these sort of tasks are representable for real-world situations, where time and space can exhibit non-discrete structure and varying scale of feedback. 
+- In the real world the length of successor paths will vary considerably, thus some compression or encoding (for non-trivial/short paths) will be necessary? 
+- Path-length also influences confidence in precomputed calculation. 
+- It makes sense that some flexibility in reusing subsets of the successors is available. It would have been interesting to see how length of sequences affects human performance and how it compares to the models.
+
 
 ## Strategy Selection as Rational Metareasoning			(Week 4 - Nicolas)
 Falk Lieder and Thomas L. Griffiths
