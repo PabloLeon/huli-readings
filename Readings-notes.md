@@ -18,7 +18,7 @@ The paper contrasts the predictions for the three classes of models for changes 
 - It makes sense that some flexibility in reusing subsets of the successors is available. It would have been interesting to see how length of sequences affects human performance and how it compares to the models.
 
 
-## Strategy Selection as Rational Metareasoning			(Week 4 - Nicolas)
+## [Strategy Selection as Rational Metareasoning](https://osf.io/6yugk/download?format=pdf)			(Week 4 - Nicolas)
 Falk Lieder and Thomas L. Griffiths
 
 ### Big picture:				
@@ -26,13 +26,11 @@ The debate on whether people are rational has traditionally been focused on whet
 
 ### Model:
 The optimal strategy selection learning mechanism maximises the agent’s total expected value of computation across all sequences of possible problems in a given environment, for a set number of strategies.
-#### Hypothesis: 
-People learn a model (i.e. set of weights) that predicts value of applying a strategy (defined by Utility - Cost) given a problem’s features. 
 
 ### Hypotheses: 
-- People predict individual strategies’ value for each problem based on problem features (they don’t  just compute an average value across all problems as described by  previous historical models)  
+- People learn a model (i.e. set of weights) that predicts value of applying a strategy (defined by Utility - Cost) given a problem’s features. (they don’t  just compute an average value across all problems as described by  previous historical models)  
 - People’s decisions/predictions improve with experience 
-- People learn about the value of strategies and explore to remove uncertainty (hence, explore-exploit dilemma on whether to stick with best predicted strategy 
+- People learn about the value of strategies and explore to remove uncertainty (hence, explore-exploit dilemma on whether to stick with best predicted strategy. In the model this is done by thompson sampling from the weights distributions. 
 - They do this for external and internal representations.
 - People predict cost and reward separately (since VOC can not be observed directly)
 
@@ -53,6 +51,14 @@ People learn a model (i.e. set of weights) that predicts value of applying a str
 
 
 ### Open questions/limits
+The two main limits regard the representation that people hold over their environment, and the "bag" of heuristics people might have. 
+- Representation learning
+  - Some problems might share similar features and require widely different strategies for optimal performance. Does this dismiss the learned model, or do people hold more intricate representations over contexts?
+  - How do we learn/represent the features of a problem, especially in high dimensional spaces? We discussed the example of chess, where choosing a heuristic becomes irrelevant without an understanding of the board. 
+- Strategies
+  - The second limiting assumption, that the authors also pointed out, is about the strategies available to people (The quantitative differences between the model fits should be taken with a grain of salt because [..] of the assumption that people use the exact [..] strategies available to the models and no other strategies. p.42). How do people acquire/generate new heuristics (e.g. take the best, weighted additive strategy, ...? )?
+
+
 
 ## Perceptions as Hypothesis, Saccades as experiments (Week 5 - Matt)
 Karl Friston, Rick A Adams, Laurent Perrinet, Michael Breakspear
