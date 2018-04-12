@@ -11,13 +11,15 @@ Our review highlights how these traps develop though the interaction of learning
 
 [PREFRONTAL CORTEX AS A META-REINFORCEMENT LEARNING SYSTEM](https://www.biorxiv.org/content/biorxiv/early/2018/04/06/295964.full.pdf) 
 Wang, Kurth-Nelson et al., 2018
+
 Deepmind "learning to learn" paper on linking computational neuroscience to RL theories. 
-Full paper of cogsci "best paper" of 2017.
+journal version of cogsci "best paper" of 2017: https://arxiv.org/pdf/1611.05763.pdf
 
 -------------------
 
 [Asking the right questions about human inquiry](https://psyarxiv.com/h457v)
 Coenen, Nelson & Gureckis - 2017
+
 Perhaps the most successful and influential account of such abilities is the Optimal Experiment Design (OED) hypothesis, which argues that humans intuitively perform experiments on the world similar to the way an effective scientist plans an experiment.
 Despite many successes, we argue that the OED hypothesis remains lacking as a theory of human inquiry and that research in the area often fails to confront some of the most interesting and important questions. 
 In this critical review, we raise and discuss nine open questions about the psychology of human inquiry.
